@@ -12,7 +12,7 @@ function App() {
   const getPokemon = async(searchTerm) => {
     try {
 
-      const URL = "https://pokeapi.co/api/v2/pokemon/pikachu"
+      const URL = `https://pokeapi.co/api/v2/pokemon/${searchTerm}`
 
       const response = await fetch(URL)
 
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <Form />
+      <Form pokemonsearch={getPokemon} />
       <PokemonDisplay />
     </>
   )
