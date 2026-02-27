@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <Form pokemonsearch={getPokemon} />
-      <PokemonDisplay />
+      <PokemonDisplay pokemon={pokemon} />
     </>
   )
 }
