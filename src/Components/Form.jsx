@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Form( props ){
 
@@ -18,7 +18,7 @@ export default function Form( props ){
     
     return (
         <fieldset>
-            <legend>Search 'Em All</legend>
+            <legend>Search 'Em All ✅</legend>
             <form onSubmit={handleSubmit}>
                 <input 
                 type="text"
