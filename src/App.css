@@ -14,7 +14,7 @@
 
 .spriteGroup {
   text-align: center;
-} 
+}
 
 .spriteGroup img {
   width: 125px;
@@ -25,3 +25,15 @@
   border-radius: 100px;
 }
 
+.movesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 15px;
+}
+
+.move {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 100px;
+  font-size: 13px;
+}

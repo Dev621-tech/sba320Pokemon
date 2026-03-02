@@ -27,15 +27,12 @@ export default function PokemonDisplay({ pokemon }) {
                         <img src={pokemon.sprites.back_shiny} alt={"bshiny"} />
                     </div>
                 </div>
-
-
-
-
-                <div>
+                <h3>Moves</h3>
+                <div className="movesContainer">
                     {pokemon.moves.map((move, index) => {
                         return (
                             <div key={index} className="move">
-                                {move.move.name}
+                                {move.move.name.charAt(0).toUpperCase() + move.move.name.slice(1)}
                             </div>
                         )
                     })}
