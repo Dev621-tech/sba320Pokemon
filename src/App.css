@@ -6,3 +6,22 @@
 }
 
 
+.spriteContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.spriteGroup {
+  text-align: center;
+} 
+
+.spriteGroup img {
+  width: 125px;
+  height: 125px;
+  margin: 5px;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 100px;
+}
+

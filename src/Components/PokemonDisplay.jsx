@@ -14,16 +14,20 @@ export default function PokemonDisplay({ pokemon }) {
                         </div>
                     ))}
                 </div>
-                <div>
-                    <h2>Normal</h2>
-                    <img src={pokemon.sprites.front_default} alt={"pokemon"} />
-                    <img src={pokemon.sprites.back_default} alt={"bpokemon"} />
+
+                <div className="spriteContainer">
+                    <div className="spriteGroup">
+                        <h2>Normal</h2>
+                        <img src={pokemon.sprites.front_default} alt={"pokemon"} />
+                        <img src={pokemon.sprites.back_default} alt={"bpokemon"} />
+                    </div>
+                    <div className="spriteGroup">
+                        <h2>Shiny</h2>
+                        <img src={pokemon.sprites.front_shiny} alt={"shiny"} />
+                        <img src={pokemon.sprites.back_shiny} alt={"bshiny"} />
+                    </div>
                 </div>
-                <div>
-                    <h2>Shiny</h2>
-                    <img src={pokemon.sprites.front_shiny} alt={"shiny"} />
-                    <img src={pokemon.sprites.back_shiny} alt={"bshiny"} />
-                </div>
+
 
 
 
