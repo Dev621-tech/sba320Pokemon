@@ -7,14 +7,6 @@ export default function PokemonDisplay({ pokemon }) {
                     {pokemon.species.name.charAt(0).toUpperCase() + pokemon.species.name.slice(1)}
                 </h1>
 
-                <div>
-                    {pokemon.types.map((type, index) => (
-                        <div key={index} className={`typeBadge ${type.type.name}`}>
-                            {type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1)}
-                        </div>
-                    ))}
-                </div>
-
                 <div className="spriteContainer">
                     <div className="spriteGroup">
                         <h2>Normal</h2>
@@ -27,6 +19,15 @@ export default function PokemonDisplay({ pokemon }) {
                         <img src={pokemon.sprites.back_shiny} alt={"bshiny"} />
                     </div>
                 </div>
+
+                <div>
+                    {pokemon.types.map((type, index) => (
+                        <div key={index} className={`typeBadge ${type.type.name}`}>
+                            {type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1)}
+                        </div>
+                    ))}
+                </div>
+                
                 <h3>Moves</h3>
                 <div className="movesContainer">
                     {pokemon.moves.map((move, index) => {
