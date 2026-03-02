@@ -4,8 +4,22 @@ export default function PokemonDisplay({ pokemon }){
         return (
             <>
             <h1>{pokemon.species.name.charAt(0).toUpperCase() + pokemon.species.name.slice(1)}</h1> 
-            <img src={pokemon.sprites.front_default} alt={pokemon} />
+            <img src={pokemon.sprites.front_default} alt={"pokemon"} />
+            <img src={pokemon.sprites.back_default} alt={"bpokemon"} />
+            <img src={pokemon.sprites.front_shiny} alt={"shiny"} />
+            <img src={pokemon.sprites.back_shiny} alt={"bshiny"} />
+
+            <div>
+                {pokemon.moves.map((move, index) => {
+                    return (
+                        <div key={index} className="move">
+                            {move.move.name}
+                        </div>
+                    )
+                })}
+            </div>
             </>
+
         );
     };
 
