@@ -1,4 +1,5 @@
-# Search 'Em All
+# Pokemon Move Index / Search 'Em All
+## All Pokemon, All Moves
 
 ## WHERE YOU CAN SEARCH FOR ANY POKEMON IN THE POKEDEX !
 
@@ -10,7 +11,19 @@
     - And A List Of All The Pokemon's Moves (100+ Available MOVES)
 
 ## SOME POKEMON YOU CAN START WITH:
--
+-   Venusaur
+-   Charizard
+-   Blastoise
+-   Mewtwo
+-   Articuno
+-   Magikarp
+-   Gyarados
+-   Magmar
+-   Rhydon
+-   Pikachu
+-   Geodude
+-   Arcanine
+-   Ekans
 
 
 ### Acknowledgements

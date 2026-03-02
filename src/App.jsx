@@ -1,5 +1,7 @@
 import Form from './Components/Form.jsx';
 import PokemonDisplay from './Components/PokemonDisplay.jsx';
+import Header from './Components/Header.jsx';
+import pokemonlogo from './assets/pokemonlogo.png'
 import { useState, useEffect } from "react";
 import './App.css'
 
@@ -7,9 +9,9 @@ import './App.css'
 
 function App() {
 
-  const [ pokemon, setPokemon ] = useState(null);
+  const [pokemon, setPokemon] = useState(null);
 
-  const getPokemon = async(searchTerm) => {
+  const getPokemon = async (searchTerm) => {
     try {
 
       const URL = `https://pokeapi.co/api/v2/pokemon/${searchTerm}`
@@ -20,7 +22,7 @@ function App() {
 
       console.log(data);
       setPokemon(data);
-      
+
     } catch (error) {
       console.error(error)
     }
@@ -32,6 +34,7 @@ function App() {
 
   return (
     <>
+      <Header logo={pokemonlogo} />
       <Form pokemonsearch={getPokemon} />
       <PokemonDisplay pokemon={pokemon} />
     </>
